@@ -1,6 +1,6 @@
 import { Outfit as OutfitFont, Ovo as OvoFont } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar";
+import Navbar from "@/components/navbar";
 
 
 const Outfit = OutfitFont({
