@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${Outfit.variable} ${Ovo.variable} antialiased`}
+        className={`${Outfit.variable} ${Ovo.variable} antialiased leading-8 overflow-x-hidden`}
       >
         <Navbar/>
         {children}

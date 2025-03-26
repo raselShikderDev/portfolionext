@@ -45,12 +45,12 @@ export default function Navbar() {
           <button>
             <Image
               alt="Moon"
-              className="w-6 cursor-pointer"
+              className="w-6 cursor-pointer active:scale-105"
               src={assets.moon_icon}
             />
           </button>
           <Link
-            className="hidden lg:flex item-center px-10 py-2.5 font-ovo border border-gray-600 rounded-full ml-4"
+            className="hidden lg:flex item-center active:scale-105 px-10 py-2.5 font-ovo border border-gray-600 rounded-full ml-4"
             href={"#"}
           >
             Connect{" "}
@@ -62,7 +62,7 @@ export default function Navbar() {
           >
             <Image
               alt="Navbar"
-              className="w-6 cursor-pointer"
+              className="w-6 cursor-pointer active:scale-105"
               src={assets.menu_black}
             />
           </button>
@@ -74,11 +74,11 @@ export default function Navbar() {
           } md:hidden bg-rose-50 flex-col w-64 gap-4 py-20 px-10 fixed h-screen top-0 bottom-0 z-50 transition duration-50 right-0`}
         >
           <div className="absolute top-6 right-6">
-            <button onClick={() => setOpenMobileNav(false)}>
+            <button onClick={() => setOpenMobileNav(false)} className="active:scale-105">
               <Image
                 alt="crossBlack"
                 src={assets.close_black}
-                className="w-5 cursor-pointer"
+                className="w-5 cursor-pointer "
               />
             </button>
           </div>
