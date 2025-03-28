@@ -1,40 +1,21 @@
-/* @import "tailwindcss";
-
-@layer theme, base, components, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/preflight.css" layer(base);
-@import "tailwindcss/utilities.css" layer(utilities);
-
-
-@theme {
-  --font-outfit: "Outfit", sans-serif;
-  --font-ovo: "Ovo", serif;
-  --color-lighthover: "#fcf4ff";
-  --color-darkhover: "#2a004a";
-  --color-darkthenme: "#11001f";
-}
-
-
-
-* {
-  font-family: var(--font-outfit);
-}
-
-.ovo {
-  font-family: var(--font-ovo);
-} */
 
 
 @import "tailwindcss";
 
 @theme {
+
+  /* Font family*/
   --font-outfit: "Outfit", sans-serif;
   --font-ovo: "Ovo", serif;
 
-  /* Remove quotes from colors */
+  /* colors */
   --color-lighthover: #fcf4ff;
   --color-darkhover: #2a004a;
   --color-darktheme: #11001f;
+
+  /* Box Shadow styles */
+  --box-shadow-lightboxshadow: 4px 4px 0 #000;
+  --box-shadow-darkboxshadow: 4px 4px 0 #fff;
 }
 
 
