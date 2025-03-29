@@ -11,31 +11,44 @@ import { RiJavascriptFill } from "react-icons/ri";
 export default function About() {
   return (
     <div className="w-full px-[12%] py-10 mt-20 md:mt-0 scroll-mt-20 mx-auto">
-      <h3 className="text-xl md:text-2xl font-ovo text-center">Introduction</h3>
-      <h2 className="text-2xl md:text-5xl font-ovo text-center">About me</h2>
-      <div className="w-full md:max-w-lg mx-auto flex flex-col lg:flex-row gap-20 item-center my-10 sm:my-20">
-        <div className="w-64 sm:w-80 rounded-3xl max-w-none">
+      <h3
+        style={{ fontFamily: "Ovo, serif" }}
+        className="text-xl md:text-2xl font-ovo text-center"
+      >
+        Introduction
+      </h3>
+      <h2
+        style={{ fontFamily: "Ovo, serif" }}
+        className="text-2xl md:text-5xl font-ovo text-center"
+      >
+        About me
+      </h2>
+      <div className="w-full  flex flex-col lg:flex-row gap-20 item-center sm:mt-7 my-0 sm:my-16">
+        <div className="w-64 sm:w-80 self-center rounded-3xl max-w-none">
           <Image
             alt="user"
             src={assets.user_image}
-            className="w-full rounded-3xl"
+            className="w-full rounded-3xl drop-shadow-lg"
           />
         </div>
         <div className="w-full md:flex-1 ">
-          <p className="max-w-2xl mb-10 font-ovo">
+          <p
+            style={{ fontFamily: "Ovo, serif" }}
+            className="max-w-2xl mb-10 font-ovo"
+          >
             I’m a MERN stack developer with a strong foundation in JavaScript.
             I’m passionate about building dynamic web applications using
             MongoDB, Express.js, React, and Node.js. Although I’m just starting
             my career, I’m eager to learn and grow in the field of web
             development.{" "}
           </p>
-          {/* Cards of languages, Education and Projects */}
-          <ul className="grid grid-cols-1 lg:grid-cols-3 max-w-2xl gap-6">
+          {/* Cards of about me */}
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[auto_fit-minmax(200px, 1fr)] max-w-2xl gap-6">
             {infoList.map(({ icon, iconDark, title, description }, index) => {
               return (
                 <li
                   key={index}
-                  className="border-[0.5px] border-gray-400 rounded-xl cursor-pointer p-6 hover:bg-lighthover hover:lightboxshadow hover:translate-x-1"
+                  className="border-[0.5px] border-gray-300 rounded-xl cursor-pointer p-6 hover:shadow-[4px_4px_0_#000] hover:translate-x-1 duration-500"
                 >
                   <Image alt={title} src={icon} className="w-7 mt-3" />
                   <h4 className="text-xl md:text-2xl text-gray-700 font-semibold my-4 font-ovo">
@@ -49,9 +62,14 @@ export default function About() {
             })}
           </ul>
           {/* Tools i use */}
-          <div className="my-10 max-w-2xl">
-            <h5 className="font-ovo text-gray-600 my-6">Tools i use</h5>
-            <div className="grid grid-cols-3 md:grid-cols-5  items-center justify-center gap-8 pb-28 flex-wrap">
+          <div className="my-10 mb-0 max-w-2xl">
+            <h5
+              style={{ fontFamily: "Ovo, serif" }}
+              className="font-ovo text-gray-600 mt-8 my-5"
+            >
+              Tools i use
+            </h5>
+            <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-8 flex-wrap">
               <div className="rounded-xl self-center w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4">
                 <FaReact className="text-cyan-500 text-5xl md:text-4xl sm:text-2xl" />
               </div>

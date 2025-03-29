@@ -2,11 +2,21 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
 export default function Navbar() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
+  const [isScroll, setIsScroll] = useState(false)
+  useEffect(()=>{
+    window.addEventListener("scroll", ()=>{
+      if (scrollY > 30) {
+        setIsScroll(true)
+      } else {
+        setIsScroll(false)
+      }
+    })
+  }, [])
   return (
     <>
       <div className="-z-10 fixed top-0 w-11/12 right-0 translate-y-[-80%]">
@@ -16,9 +26,9 @@ export default function Navbar() {
           src={assets.header_bg_color}
         />
       </div>
-      <nav className="flex justify-between px-5 lg:px-8 xl:px-[8%] item-center z-50 py-4">
+      <nav className={`flex top-0 left-0 w-full fixed ${isScroll ? "bg-[rgba(255,255,255,0.5)] backdrop-blur-xl shadow-sm":""} justify-between px-5 lg:px-7 xl:px-[8%] item-center z-50 py-4`}>
         <Link className="flex items-center" href={"/"}>
-          <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
+          <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold">
             Rasel Shikder<span className="text-red-600">.</span>
           </h1>
         </Link>
@@ -50,7 +60,7 @@ export default function Navbar() {
             />
           </button>
           <Link
-            className="hidden lg:flex item-center active:scale-105 px-10 py-2.5 font-ovo border border-gray-600 rounded-full ml-4"
+            className="hidden lg:flex item-center active:scale-105 md:px-8 md:py-2 xl:px-10 xl:py-2.5 font-ovo border border-gray-600 rounded-full ml-4"
             href={"#"}
           >
             Connect{" "}
@@ -71,7 +81,7 @@ export default function Navbar() {
         <ul
           className={`${
             openMobileNav ? "flex" : "hidden"
-          } md:hidden bg-rose-50 flex-col w-64 gap-4 py-20 px-10 fixed h-screen top-0 bottom-0 z-50 transition duration-50 right-0`}
+          } md:hidden bg-rose-50 flex-col w-64 gap-4 py-20 px-10 fixed h-screen top-0 bottom-0 z-50 transition duration-50 shadow-sm right-0 ${isScroll ? "bg-[rgba(255,255,255,0.5)] backdrop-blur-xl shadow-sm":""}`}
         >
           <div className="absolute top-6 right-6">
             <button onClick={() => setOpenMobileNav(false)} className="active:scale-105">

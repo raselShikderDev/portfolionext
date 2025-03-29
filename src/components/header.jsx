@@ -6,12 +6,12 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="flex w-11/12 mx-auto items-center h-screen justify-center gap-4">
+    <div className="flex w-11/12 mx-auto items-center h-screen mt-10 justify-center gap-4">
       <div className="w-8/12 flex flex-col items-center space-y-3 mt-24 sm:mt-0">
         <Image
           alt="user"
           src={assets.profile_img}
-          className="w-32 rounded-full shadow "
+          className="w-32 rounded-full shadow-sm drop-shadow-lg"
         />
         <h2
           style={{ fontFamily: "Ovo, serif" }}
@@ -20,7 +20,7 @@ const Header = () => {
           Hi! I am Rasel Shikder{" "}
           <Image alt="hand" className="w-6" src={assets.hand_icon} />
         </h2>
-        <h3 className="text-2xl text-center sm:text-4xl lg:text-6xl lg:text-[66px] ovo">
+        <h3 className="text-2xl text-center sm:text-4xl lg:text-5xl xl:text-[66px] ovo">
           Mern Stack Developer <br /> based on Dhaka
         </h3>
         <p className="text-neutral-700 text-sm sm:text-base text-center max-w-2xl mx-auto ovo">
