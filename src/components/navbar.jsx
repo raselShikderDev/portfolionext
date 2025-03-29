@@ -17,13 +17,13 @@ export default function Navbar() {
         />
       </div>
       <nav className="flex justify-between px-5 lg:px-8 xl:px-[8%] item-center z-50 py-4">
-        <Link href={"/"}>
-          <h1 className="text-3xl font-semibold">
+        <Link className="flex items-center" href={"/"}>
+          <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
             Rasel Shikder<span className="text-red-600">.</span>
           </h1>
         </Link>
         <ul
-          className={`hidden md:flex item-center bg-white bg-opacity-50 shadow-sm gap-6 lg:gap-8 px-12 py-3 rounded-full`}
+          className={`hidden text-sm md:text-base md:flex item-center bg-white bg-opacity-50 shadow-sm gap-6 lg:gap-8 px-10 py-2 lg:px-12 lg:py-3  rounded-full`}
         >
           <li className="font-ovo">
             <Link href={"/"}>Home</Link>
