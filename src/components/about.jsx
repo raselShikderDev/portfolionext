@@ -13,7 +13,7 @@ export default function About() {
     <div className="w-full px-[12%] py-10 mt-20 md:mt-0 scroll-mt-20 mx-auto">
       <h3
         style={{ fontFamily: "Ovo, serif" }}
-        className="text-xl md:text-2xl font-ovo text-center"
+        className="text-xl md:text-2xl mb-1 font-ovo text-center"
       >
         Introduction
       </h3>
@@ -70,35 +70,35 @@ export default function About() {
               Tools i use
             </h5>
             <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-8 flex-wrap">
-              <div className="rounded-xl self-center w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4">
-                <FaReact className="text-cyan-500 text-5xl md:text-4xl sm:text-2xl" />
+              <div className="rounded-xl group self-center w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4">
+                <FaReact className="text-cyan-500 group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-2xl" />
               </div>
-              <div className="rounded-xl self-center w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4">
-                <FaNodeJs className="text-green-600 text-5xl md:text-4xl sm:text-2xl" />
+              <div className="rounded-xl group self-center w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4">
+                <FaNodeJs className="text-green-600 group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-2xl" />
               </div>
-              <div className="rounded-xl w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
-                <FaHtml5 className=" text-[#E34C26] text-5xl md:text-4xl sm:text-2xl" />
+              <div className="rounded-xl group w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
+                <FaHtml5 className=" text-[#E34C26] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-2xl" />
               </div>
-              <div className="rounded-xl w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
-                <IoLogoCss3 className=" text-[#2965f1] text-5xl md:text-4xl sm:text-3xl" />
+              <div className="rounded-xl group w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
+                <IoLogoCss3 className=" text-[#2965f1] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-3xl" />
               </div>
-              <div className="rounded-xl w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
-                <SiMongodb className="text-green-500 text-5xl md:text-4xl sm:text-3xl" />
+              <div className="rounded-xl group w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
+                <SiMongodb className="text-green-500 group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-3xl" />
               </div>
-              <div className="rounded-xl w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
-                <FaBootstrap className="text-[#7110EF] text-5xl md:text-4xl sm:text-3xl" />
+              <div className="rounded-xl w-[80px] group md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
+                <FaBootstrap className="text-[#7110EF] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-3xl" />
               </div>
-              <div className="rounded-xl w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
-                <SiPostgresql className="text-[#0064a5] text-5xl md:text-4xl sm:text-3xl" />
+              <div className="rounded-xl w-[80px] group md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
+                <SiPostgresql className="text-[#0064a5] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-3xl" />
               </div>
-              <div className="rounded-xl w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
-                <TbBrandNextjs className="text-5xl text-neutral-700 md:text-4xl sm:text-3xl" />
+              <div className="rounded-xl w-[80px] group md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
+                <TbBrandNextjs className="text-5xl group-hover:scale-125 duration-500 text-neutral-700 md:text-4xl sm:text-3xl" />
               </div>
-              <div className="rounded-xl w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
-                <RiJavascriptFill className="text-5xl text-[#f0db4f] md:text-4xl sm:text-3xl" />
+              <div className="rounded-xl group w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
+                <RiJavascriptFill className="text-5xl group-hover:scale-125 duration-500 text-[#f0db4f] md:text-4xl sm:text-3xl" />
               </div>
-              <div className="rounded-xl w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
-                <SiTailwindcss className="text-5xl text-sky-500 md:text-4xl sm:text-3xl" />
+              <div className="rounded-xl w-[80px] group md:w-[70px] border-[0.5px] border-gray-700 p-4 ">
+                <SiTailwindcss className="text-5xl group-hover:scale-125 duration-500 text-sky-500 md:text-4xl sm:text-3xl" />
               </div>
             </div>
           </div>
