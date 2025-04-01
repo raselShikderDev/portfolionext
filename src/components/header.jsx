@@ -25,8 +25,7 @@ const Header = () => {
         </h3>
         <p className="text-neutral-700 text-sm sm:text-base text-center max-w-2xl mx-auto ovo">
           Transforming Ideas into Stunning, Interactive, and Scalable Web
-          Experiences with a Focus on Performance, Aesthetics, and Modern
-          Frontend Technologies.
+          Experiences with a Focus on Performance, Aesthetics, and Modern Technologies.
         </p>
         <div className="flex flex-col gap-3 sm:gap-0 sm:flex-row items-center space-x-3 mt-2">
           <Link
