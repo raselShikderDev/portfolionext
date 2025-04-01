@@ -20,7 +20,7 @@ const Works = () => {
       </h2>
       <p
         style={{ fontFamily: "Ovo, serif" }}
-        className="max-w-3xl mx-auto mt-4 font-ovo text-center"
+        className="max-w-3xl sm:text-lg text-sm mx-auto mt-4 font-ovo text-center"
       >
         Here’s a collection of web applications and projects I’ve built,
         combining modern design, seamless user experience, and cutting-edge

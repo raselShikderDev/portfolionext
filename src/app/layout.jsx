@@ -21,9 +21,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth dark">
       <body
-        className={`${Outfit.variable} ${Ovo.variable} antialiased leading-8 overflow-x-hidden`}
+        className={`${Outfit.variable} ${Ovo.variable} antialiased leading-8 overflow-x-hidden dark:bg-darktheme dark:text-white`}
       >
         <Navbar />
         {children}

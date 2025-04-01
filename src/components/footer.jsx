@@ -20,14 +20,26 @@ const Footer = () => {
           <p>@ 2025 Rasel Shikder. All rights reserved</p>
         </div>
         <div className="space-x-7 md:space-x-14">
-          <Link className="text-gray-600" href={"#"}>
-            Terms of Services
+          <Link
+            className="text-gray-600"
+            target="_blank"
+            href={"https://github.com/raselShikderDev"}
+          >
+            Github
           </Link>
-          <Link className="text-gray-600" href={"#"}>
-            Privacy Policy
+          <Link
+            className="text-gray-600"
+            target="_blank"
+            href={"https://www.linkedin.com/in/raseldev"}
+          >
+            Linkedin
           </Link>
-          <Link className="text-gray-600" href={"#"}>
-            Connect with me
+          <Link
+            className="text-gray-600"
+            target="_blank"
+            href={"https://x.com/raselShikderDev"}
+          >
+            Twitter
           </Link>
         </div>
       </div>

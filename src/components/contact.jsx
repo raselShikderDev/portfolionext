@@ -64,7 +64,7 @@ const Contact = () => {
       </h2>
       <p
         style={{ fontFamily: "Ovo, serif" }}
-        className="max-w-3xl mx-auto mt-4 font-ovo text-center"
+        className="max-w-3xl sm:text-lg text-sm mx-auto mt-4 font-ovo text-center"
       >
         Have a project in mind or just want to say hello? Feel free to reach
         out! I’m always open to discussing new opportunities, collaborations, or

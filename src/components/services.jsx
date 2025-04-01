@@ -20,7 +20,7 @@ const Services = () => {
       </h2>
       <p
         style={{ fontFamily: "Ovo, serif" }}
-        className="max-w-3xl mx-auto mt-4 font-ovo text-center"
+        className="max-w-3xl sm:text-lg text-sm mx-auto mt-4 font-ovo text-center"
       >
         Blending Creativity with Code to Deliver High-Performance, Responsive,
         and Scalable Web Applications. Specializing in Frontend Technologies,
