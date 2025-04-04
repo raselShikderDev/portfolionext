@@ -11,7 +11,7 @@ const Header = ({ isDark }) => {
       <div className="w-8/12 flex flex-col items-center space-y-3 mt-24 sm:mt-0">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 100, y: 0 }}
+          whileInView={{ opacity: 100, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <Image
@@ -22,7 +22,7 @@ const Header = ({ isDark }) => {
         </motion.div>
         <motion.h2
           initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 100, y: 0 }}
+          whileInView={{ opacity: 100, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex gap-2 items-center text-lg md:text-2xl ovo"
         >
@@ -31,7 +31,7 @@ const Header = ({ isDark }) => {
         </motion.h2>
         <motion.h3
           initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 100, x: 0 }}
+          whileInView={{ opacity: 100, x: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
           className="text-2xl text-center sm:text-4xl lg:text-5xl xl:text-[66px] ovo"
         >
@@ -39,7 +39,7 @@ const Header = ({ isDark }) => {
         </motion.h3>
         <motion.p
           initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 100, x: 0 }}
+          whileInView={{ opacity: 100, x: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
           className="text-gray-700 dark:text-gray-200 sm:text-lg text-sm text-center max-w-2xl mx-auto ovo"
         >
@@ -50,7 +50,7 @@ const Header = ({ isDark }) => {
         <div className="flex flex-col gap-3 sm:gap-0 sm:flex-row items-center space-x-3 mt-7">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 100, x: 0 }}
+            whileInView={{ opacity: 100, x: 0 }}
             transition={{ duration: 0.8, delay: 1.3 }}
           >
             <Link
@@ -62,7 +62,7 @@ const Header = ({ isDark }) => {
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 100, x: 0 }}
+            whileInView={{ opacity: 100, x: 0 }}
             transition={{ duration: 0.8, delay: 1.3 }}
           >
             <Link

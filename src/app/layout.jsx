@@ -14,7 +14,7 @@ const Ovo = OvoFont({
 });
 
 export const metadata = {
-  title: "Rasel Shikder | Portfolio",
+  title: "Rasel Shikder",
   description: "Innovative Solutions, Seamless Experiences",
 };
 
