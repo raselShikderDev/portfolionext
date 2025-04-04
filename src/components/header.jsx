@@ -33,7 +33,7 @@ const Header = ({ isDark }) => {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 100, x: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="text-2xl text-center sm:text-4xl lg:text-5xl xl:text-[66px] ovo"
+          className="text-xl text-center sm:text-4xl lg:text-5xl xl:text-[66px] ovo"
         >
           Mern Stack Developer <br /> based on Dhaka
         </motion.h3>
@@ -55,7 +55,7 @@ const Header = ({ isDark }) => {
           >
             <Link
               href={"#"}
-              className="flex items-center gap-2 shadow-xl active:scale-105 px-5 sm:px-10 py-1 sm:py-2.5 bg-darkhover text-white dark:bg-transparent dark:border-gray-500 dark:border dark:hover:bg-darkhover duration-500 transition dark:hover:text-white rounded-full font-ovo"
+              className="flex items-center gap-2 shadow-xl active:scale-105 px-5 sm:px-10 py-1 sm:py-2.5 bg-darkhover text-white hover:bg-black/15 hover:text-black  hover:border hover:border-gray-500 dark:bg-black dark:border-gray-500 dark:border dark:hover:bg-darkhover duration-500 transition dark:hover:text-white rounded-full font-ovo"
             >
               Connect with me <MdArrowRightAlt className="text-lg" />
             </Link>
@@ -68,7 +68,7 @@ const Header = ({ isDark }) => {
             <Link
               href="/sample-resume.pdf"
               download
-              className="flex active:scale-105 items-center gap-2 shadow-xl px-5 sm:px-10 py-1 sm:py-2.5 rounded-full text-darkhover border duration-500 transition dark:bg-white dark:text-black dark:hover:bg-darkhover dark:hover:text-white border-gray-500"
+              className="flex active:scale-105 items-center gap-2 shadow-xl px-5 sm:px-10 py-1 sm:py-2.5 rounded-full text-darkhover hover:text-black hover:bg-black/15 border duration-500 transition dark:bg-white dark:text-black dark:hover:bg-darkhover dark:hover:text-white border-gray-500"
             >
               My resume <GoDownload className="text-lg" />
             </Link>

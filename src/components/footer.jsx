@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="text-gray-600 dark:text-gray-400">
           <p>@ 2025 Rasel Shikder. All rights reserved</p>
         </div>
-        <div className="space-x-7 md:space-x-14">
+        <div className="space-x-7 text-center md:space-x-14">
           <Link
             className="text-gray-600 dark:text-gray-400"
             target="_blank"

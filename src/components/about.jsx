@@ -93,7 +93,7 @@ export default function About({ isDark }) {
             <motion.h5
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 100 }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 2, delay: 1 }}
               style={{ fontFamily: "Ovo, serif" }}
               className="font-ovo dark:text-gray-300 text-gray-600 mt-8 my-5"
             >

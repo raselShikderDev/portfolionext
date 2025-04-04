@@ -34,7 +34,9 @@ export default function Navbar({ isDark, setIsDark }) {
         } justify-between px-5 lg:px-7 xl:px-[8%] item-center z-50 py-4`}
       >
         <Link className="flex items-center" href={"/"}>
-          <h1 className={`text-xl dark:text-white/90 md:text-2xl lg:text-[28px] font-semibold`}>
+          <h1
+            className={`text-xl dark:text-white/90 md:text-2xl lg:text-[28px] font-semibold`}
+          >
             Rasel Shikder<span className="text-red-600">.</span>
           </h1>
         </Link>
@@ -62,15 +64,15 @@ export default function Navbar({ isDark, setIsDark }) {
             <Image
               alt="Moon"
               className="w-6 cursor-pointer active:scale-105 duration-500 transition"
-              src={isDark ? assets.sun_icon :assets.moon_icon}
+              src={isDark ? assets.sun_icon : assets.moon_icon}
             />
           </button>
           <Link
-            className="hidden lg:flex item-center active:scale-105 md:px-8 md:py-2 xl:px-10 xl:py-2.5 font-ovo border border-gray-600 rounded-full ml-4"
+            className="hidden lg:flex item-center active:scale-105 md:px-8 md:py-2 xl:px-10 xl:py-2.5 font-ovo border border-gray-600 rounded-full group ml-4 dark:hover:text-black dark:hover:bg-white duration-500 hover:bg-darktheme group hover:text-white"
             href={"#"}
           >
             Connect{" "}
-            <GoArrowUpRight className="self-center ml-2 text-semibold text-black dark:text-white" />
+            <GoArrowUpRight className="self-center text-lg ml-2 text-semibold text-black group-hover:text-white dark:text-white duration-500 dark:group-hover:text-black" />
           </Link>
           <button
             onClick={() => setOpenMobileNav(true)}
@@ -79,7 +81,7 @@ export default function Navbar({ isDark, setIsDark }) {
             <Image
               alt="Navbar"
               className="w-6 cursor-pointer active:scale-105"
-              src={isDark ? assets.menu_white :assets.menu_black}
+              src={isDark ? assets.menu_white : assets.menu_black}
             />
           </button>
         </div>
@@ -100,7 +102,7 @@ export default function Navbar({ isDark, setIsDark }) {
             >
               <Image
                 alt="crossBlack"
-                src={isDark ? assets.close_white :assets.close_black}
+                src={isDark ? assets.close_white : assets.close_black}
                 className="w-5 cursor-pointer "
               />
             </button>

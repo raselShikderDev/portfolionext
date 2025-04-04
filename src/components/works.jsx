@@ -5,17 +5,6 @@ import { MdArrowRightAlt } from "react-icons/md";
 import { motion } from "framer-motion";
 
 const Works = () => {
-  const cardVariants = {
-    hidden: { opacity: 0, x: -100 },
-    visible: (custom) => ({
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.8,
-        delay: custom,
-      },
-    }),
-  };
 
   return (
     <div className="w-full px-[12%] py-10 md:mt-0 scroll-mt-20 mx-auto">
@@ -54,11 +43,9 @@ const Works = () => {
                 backgroundImage: `url(${bgImage})`,
               }}
               key={index}
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              custom={delay}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 100, x: 0 }}
+              transition={{ duration: 1, delay: delay }}
               className="aspect-square bg-no-repeat bg-center bg-cover rounded-lg relative cursor-pointer group"
             >
               <div className="flex gap-2 justify-between items-center w-10/12 rounded-md bg-white text-black absolute bottom-5 left-1/2 -translate-x-1/2 px-5 py-3 duration-500 group-hover:bottom-7">
@@ -78,12 +65,18 @@ const Works = () => {
           );
         })}
       </div>
-      <Link
-        className="flex w-max mx-auto text-center gap-2 items-center active:scale-105 px-5 sm:px-10 py-1 sm:py-2.5 font-ovo my-20 border dark:hover:text-black duration-500 hover:bg-lighthover border-gray-700 rounded-full"
-        href={"#"}
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 100, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
       >
-        Show more <MdArrowRightAlt />
-      </Link>
+        <Link
+          className="flex w-max mx-auto text-center gap-2 items-center active:scale-105 px-5 sm:px-10 py-1 sm:py-2.5 font-ovo my-20 border dark:hover:text-black duration-500 hover:bg-lighthover border-gray-700 rounded-full"
+          href={"#"}
+        >
+          Show more <MdArrowRightAlt />
+        </Link>
+      </motion.div>
     </div>
   );
 };
