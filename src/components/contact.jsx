@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
 import { IoIosSend } from "react-icons/io";
+import { motion } from "framer-motion";
 
-const Contact = () => {
+const Contact = ({ isDark }) => {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
@@ -45,63 +46,92 @@ const Contact = () => {
   return (
     <div
       style={{
-        backgroundImage: `url("/footer-bg-color.png")`,
+        backgroundImage: isDark ? "" : `url("/footer-bg-color.png")`,
         backgroundSize: "90% auto",
       }}
-      className="w-full px-[12%] py-10 mt-20 md:mt-0 scroll-mt-20 mx-auto bg-no-repeat bg-center"
+      className="w-full px-[12%] py-10 md:mt-0 dark:bg-darktheme scroll-mt-20 mx-auto bg-no-repeat bg-center"
     >
-      <h3
-        style={{ fontFamily: "Ovo, serif" }}
-        className="text-xl md:text-2xl mb-1 font-ovo text-center"
+      <motion.h3
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 100, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-xl md:text-2xl mb-1 ovo font-ovo text-center"
       >
         Contact with me
-      </h3>
-      <h2
-        style={{ fontFamily: "Ovo, serif" }}
-        className="text-2xl md:text-5xl font-ovo text-center"
+      </motion.h3>
+      <motion.h2
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 100, y: 0 }}
+        transition={{ duration: 1, delay: 0.4 }}
+        className="text-2xl md:text-5xl ovo font-ovo text-center"
       >
         Get in touch
-      </h2>
-      <p
-        style={{ fontFamily: "Ovo, serif" }}
-        className="max-w-3xl sm:text-lg text-sm mx-auto mt-4 font-ovo text-center"
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 100, y: 0 }}
+        transition={{ duration: 1, delay: 0.7 }}
+        className="max-w-3xl sm:text-lg ovo text-sm mx-auto mt-4 font-ovo text-center"
       >
         Have a project in mind or just want to say hello? Feel free to reach
         out! I’m always open to discussing new opportunities, collaborations, or
         any exciting ideas.
-      </p>
-      <form onSubmit={onSubmit} className="my-14 max-w-2xl mx-auto space-y-10">
-        <div className="flex gap-4 justify-between items-center">
+      </motion.p>
+      <form
+        onSubmit={onSubmit}
+        className="my-14 max-w-2xl mx-auto space-y-7 sm:space-y-10"
+      >
+        <div className="flex flex-col md:flex-row gap-4 justify-between items-center">
           <input type="hidden" name="subject" value="Portfolio - Rasel" />
-          <input
-            type="text"
-            className="bg-white w-full md:w-1/2 px-4 py-2.5 focus-visible:outline-none rounded-sm border-[0.5px] border-gray-400 shadow-sm"
-            placeholder="Enter your name"
-            name="name"
-            required
-          />
-          <input
-            type="email"
-            className="bg-white w-full md:w-1/2 px-4 py-2.5 focus-visible:outline-none rounded-sm border-[0.5px] border-gray-400 shadow-sm"
-            placeholder="Enter your email"
-            name="email"
-            required
-          />
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 100, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            className="w-full md:w-1/2"
+          >
+            <input
+              type="text"
+              className="bg-white w-full  dark:text-white/90 dark:bg-darkhover dark:border-gray-500 px-4 py-2.5 focus-visible:outline-none rounded-sm border-[0.5px] border-gray-400  shadow-sm"
+              placeholder="Enter your name"
+              name="name"
+              required
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 100, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            className="w-full md:w-1/2"
+          >
+            <input
+              type="email"
+              className="bg-white w-full  dark:text-white/90 dark:bg-darkhover dark:border-gray-500 px-4 py-2.5 focus-visible:outline-none rounded-sm border-[0.5px] border-gray-400 shadow-sm"
+              placeholder="Enter your email"
+              name="email"
+              required
+            />
+          </motion.div>
         </div>
-        <textarea
-          className="bg-white w-full px-4 py-2.5 focus-visible:outline-none rounded-sm border-[0.5px] border-gray-400 shadow-sm"
+        <motion.textarea
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 100, y: 0 }}
+          transition={{ duration: 0.8, delay: 1 }}
+          className="bg-white w-full dark:text-white/90 dark:bg-darkhover dark:border-gray-500 px-4 py-2.5 focus-visible:outline-none rounded-sm border-[0.5px] border-gray-400 shadow-sm"
           placeholder="Enter your message"
           name="message"
           id="message"
-          rows="6"
+          rows="4"
           required
-        ></textarea>
-        <button
-          className="flex w-max mx-auto text-center gap-2 items-center active:scale-105 px-5 sm:px-10 py-1 sm:py-2.5 font-ovo duration-500 border bg-darkhover text-white hover:text-black hover:bg-lighthover border-gray-700 rounded-full"
+        ></motion.textarea>
+        <motion.button
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 100, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.3 }}
+          className="flex w-max mx-auto text-center gap-2 items-center px-5 sm:px-10 py-1 sm:py-2.5 font-ovo duration-500 border bg-darkhover text-white hover:text-black hover:bg-lighthover dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:text-white active:scale-105 border-gray-700 rounded-full"
           type="submit"
         >
           Send now <IoIosSend />
-        </button>
+        </motion.button>
         <p className="text-center mt-5">{result}</p>
       </form>
     </div>
