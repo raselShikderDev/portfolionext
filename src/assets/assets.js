@@ -81,25 +81,25 @@ export const workData = [
     title: "Frontend project",
     description: "Web Design",
     bgImage: "/work-1.png",
-    delay:1,
+    delay: 1,
   },
   {
     title: "Geo based app",
     description: "Mobile App",
     bgImage: "/work-2.png",
-    delay:1.5,
+    delay: 1.5,
   },
   {
     title: "Photography site",
     description: "Web Design",
     bgImage: "/work-3.png",
-    delay:2,
+    delay: 2,
   },
   {
     title: "UI/UX designing",
     description: "UI/UX Design",
     bgImage: "/work-4.png",
-    delay:2.5,
+    delay: 2.5,
   },
 ];
 
@@ -109,7 +109,7 @@ export const serviceData = [
     title: "Web design",
     description: "Web development is the process of building, programming...",
     link: "",
-    delay:1,
+    delay: 1,
   },
   {
     icon: assets.mobile_icon,
@@ -117,7 +117,7 @@ export const serviceData = [
     description:
       "Mobile app development involves creating software for mobile devices...",
     link: "",
-    delay:1.5,
+    delay: 1.5,
   },
   {
     icon: assets.ui_icon,
@@ -125,14 +125,14 @@ export const serviceData = [
     description:
       "UI/UX design focuses on creating a seamless user experience...",
     link: "",
-    delay:2,
+    delay: 2,
   },
   {
     icon: assets.graphics_icon,
     title: "Graphics design",
     description: "Creative design solutions to enhance visual communication...",
     link: "",
-    delay:2.5,
+    delay: 2.5,
   },
 ];
 
@@ -140,24 +140,24 @@ export const infoList = [
   {
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
-    title: "Languages",
+    title: "Languages & Tech Stack",
     description:
-      "HTML, CSS, JavaScript Typscript, React Js, Next Js, Node Js, MongoDB",
-      delay:1,
+      "Node Js, Express, MongoDB, PostgreSQL, JavaScript, Typscript, Prisma, Git, React, Next Js, Redux Toolkit, Tailwind CSS,  RESTful APIs",
+    delay: 1,
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
     description: "Bechelor of Business Administration (Running)",
-    delay:1.5,
+    delay: 1.5,
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
     description: "Built more than 5 projects",
-    delay:2,
+    delay: 2,
   },
 ];
 

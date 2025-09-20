@@ -1,11 +1,15 @@
 import { assets, infoList } from "@/assets/assets";
 import Image from "next/image";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { SiMongodb, SiPostgresql, SiTailwindcss } from "react-icons/si";
+import {
+  SiExpress,
+  SiMongodb,
+  SiPostgresql,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import { FaHtml5 } from "react-icons/fa6";
-import { IoLogoCss3 } from "react-icons/io5";
-import { FaBootstrap } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
@@ -54,11 +58,12 @@ export default function About({ isDark }) {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mb-10 sm:text-lg text-sm font-ovo text-center lg:text-left"
           >
-            I’m a MERN stack developer with a strong foundation in JavaScript.
-            I’m passionate about building dynamic web applications using
-            MongoDB, Express.js, React, and Node.js. Although I’m just starting
-            my career, I’m eager to learn and grow in the field of web
-            development.
+            I’m a full-stack developer skilled in JavaScript/TypeScript, working
+            with Node.js, Express, MongoDB, PostgreSQL, and Prisma on the
+            backend, and React, Next.js, Redux Toolkit, and Tailwind CSS on the
+            frontend. I build scalable apps with RESTful APIs, follow Agile
+            SDLC, leverage CI/CD workflows, and enjoy solving problems while
+            delivering efficient, maintainable end-to-end solutions.
           </motion.p>
 
           {/* Info cards */}
@@ -104,7 +109,7 @@ export default function About({ isDark }) {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 100 }}
-                transition={{ duration: 2, delay: 0.5 }}
+                transition={{ duration: 2, delay: 0.3 }}
                 className="rounded-xl group self-center w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4"
               >
                 <FaReact className="text-cyan-500 group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-2xl" />
@@ -112,7 +117,7 @@ export default function About({ isDark }) {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 100 }}
-                transition={{ duration: 2, delay: 0.8 }}
+                transition={{ duration: 2, delay: 0.6 }}
                 className="rounded-xl group self-center w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4"
               >
                 <FaNodeJs className="text-green-600 group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-2xl" />
@@ -120,23 +125,23 @@ export default function About({ isDark }) {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 100 }}
+                transition={{ duration: 2, delay: 0.9 }}
+                className="rounded-xl group w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4"
+              >
+                <SiTypescript className="text-[#3178C6] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-2xl" />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 100 }}
                 transition={{ duration: 2, delay: 1.2 }}
                 className="rounded-xl group w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4"
               >
-                <FaHtml5 className="text-[#E34C26] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-2xl" />
+                <SiExpress className="text-[#303030] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-3xl" />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 100 }}
-                transition={{ duration: 2, delay: 1.6 }}
-                className="rounded-xl group w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4"
-              >
-                <IoLogoCss3 className="text-[#2965f1] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-3xl" />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 100 }}
-                transition={{ duration: 2, delay: 2 }}
+                transition={{ duration: 2, delay: 1.5 }}
                 className="rounded-xl group w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4"
               >
                 <SiMongodb className="text-green-500 group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-3xl" />
@@ -144,15 +149,15 @@ export default function About({ isDark }) {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 100 }}
-                transition={{ duration: 2, delay: 2.4 }}
+                transition={{ duration: 2, delay: 1.8 }}
                 className="rounded-xl w-[80px] group md:w-[70px] border-[0.5px] border-gray-700 p-4"
               >
-                <FaBootstrap className="text-[#7110EF] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-3xl" />
+                <SiRedux className="text-[#764abc] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-3xl" />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 100 }}
-                transition={{ duration: 2, delay: 2.8 }}
+                transition={{ duration: 2, delay: 2.2 }}
                 className="rounded-xl w-[80px] group md:w-[70px] border-[0.5px] border-gray-700 p-4"
               >
                 <SiPostgresql className="text-[#0064a5] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-3xl" />
@@ -160,7 +165,7 @@ export default function About({ isDark }) {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 100 }}
-                transition={{ duration: 2, delay: 3.2 }}
+                transition={{ duration: 2, delay: 2.5 }}
                 className="rounded-xl w-[80px] group md:w-[70px] border-[0.5px] border-gray-700 p-4"
               >
                 <TbBrandNextjs className="text-5xl group-hover:scale-125 duration-500 text-gray-700 dark:text-gray-400 md:text-4xl sm:text-3xl" />
@@ -168,7 +173,7 @@ export default function About({ isDark }) {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 100 }}
-                transition={{ duration: 2, delay: 3.6 }}
+                transition={{ duration: 2, delay: 2.8 }}
                 className="rounded-xl group w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4"
               >
                 <RiJavascriptFill className="text-5xl group-hover:scale-125 duration-500 text-[#f0db4f] md:text-4xl sm:text-3xl" />
@@ -176,7 +181,7 @@ export default function About({ isDark }) {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 100 }}
-                transition={{ duration: 2, delay: 4 }}
+                transition={{ duration: 2, delay: 3.2 }}
                 className="rounded-xl w-[80px] group md:w-[70px] border-[0.5px] border-gray-700 p-4"
               >
                 <SiTailwindcss className="text-5xl group-hover:scale-125 duration-500 text-sky-500 md:text-4xl sm:text-3xl" />
