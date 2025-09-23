@@ -29,9 +29,9 @@ const Services = () => {
         transition={{ duration: 1, delay: 0.7 }}
         className="max-w-3xl dark:text-gray-200 ovo sm:text-lg text-sm mx-auto mt-4 font-ovo text-center"
       >
-        Blending Creativity with Code to Deliver High-Performance, Responsive,
-        and Scalable Web Applications. Specializing in Frontend Technologies,
-        and Modern Web Development.
+        Building responsive, high-performance web applications with the MERN
+        stack and modern web technologies. From frontend to backend, I create
+        seamless full-stack solutions.
       </motion.p>
       <div className="grid grid-cols-1 my-16 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 items-center">
         {serviceData.map(({ icon, title, description, link, delay }, index) => {

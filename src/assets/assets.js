@@ -35,8 +35,14 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
+import react_icon from "@/assets/services/react-2.svg";
+import nodejs_icon from "@/assets/services/nodejs-icon.svg";
+import javascript_icon from "@/assets/services/javascript-1.svg";
 
 export const assets = {
+  nodejs_icon,
+  javascript_icon,
+  react_icon,
   user_image,
   code_icon,
   code_icon_dark,
@@ -79,58 +85,64 @@ export const assets = {
 export const workData = [
   {
     title: "Frontend project",
-    description: "Web Design",
+    description: "fruit store",
     bgImage: "/work-1.png",
-    delay: 1,
+    delay: 0.4,
+    link: "https://fruite-store.netlify.app",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "Digital Payment System",
+    description: "Digital Wallet Application",
     bgImage: "/work-2.png",
-    delay: 1.5,
+    delay: 0.8,
+    link: "https://matir-pay-wallet.vercel.app",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "Tour Management System",
+    description: "Tour Booking & Analytics App",
     bgImage: "/work-3.png",
-    delay: 2,
+    delay: 1.2,
+    link: "https://tough-tour.vercel.app",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    title: "Library Management",
+    description: "Library Inventory & Borrowing",
     bgImage: "/work-4.png",
-    delay: 2.5,
+    delay: 1.6,
+    link: "https://librarymy.vercel.app",
   },
 ];
 
 export const serviceData = [
   {
-    icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
+    icon: assets.react_icon,
+    title: "Frontend Development",
+    description:
+      "Building responsive and dynamic user interfaces using React.js, ensuring smooth performance and modern design practices.",
     link: "",
     delay: 1,
   },
   {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    icon: assets.nodejs_icon,
+    title: "Backend Development",
     description:
-      "Mobile app development involves creating software for mobile devices...",
+      "Developing secure and scalable server-side applications with Node.js and Express.js, including RESTful APIs and authentication systems.",
     link: "",
     delay: 1.5,
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    icon: assets.mongodb,
+    title: "Database Management",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
+      "Designing and managing databases with MongoDB, ensuring efficient data storage, retrieval, and real-time updates.",
     link: "",
     delay: 2,
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    icon: assets.javascript_icon,
+    title: "Full-Stack Solutions",
+    description:
+      "Delivering complete MERN stack applications, integrating frontend, backend, and database for end-to-end web solutions.",
     link: "",
     delay: 2.5,
   },

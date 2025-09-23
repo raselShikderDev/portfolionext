@@ -136,7 +136,7 @@ export default function About({ isDark }) {
                 transition={{ duration: 2, delay: 1.2 }}
                 className="rounded-xl group w-[80px] md:w-[70px] border-[0.5px] border-gray-700 p-4"
               >
-                <SiExpress className="text-[#303030] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-3xl" />
+                <SiExpress className="text-[#303030] dark:text-[#EAEAEA] group-hover:scale-125 duration-500 text-5xl md:text-4xl sm:text-3xl" />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -168,7 +168,7 @@ export default function About({ isDark }) {
                 transition={{ duration: 2, delay: 2.5 }}
                 className="rounded-xl w-[80px] group md:w-[70px] border-[0.5px] border-gray-700 p-4"
               >
-                <TbBrandNextjs className="text-5xl group-hover:scale-125 duration-500 text-gray-700 dark:text-gray-400 md:text-4xl sm:text-3xl" />
+                <TbBrandNextjs className="text-5xl group-hover:scale-125 duration-500 text-gray-700 dark:text-[#EAEAEA] md:text-4xl sm:text-3xl" />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0 }}

@@ -44,19 +44,19 @@ export default function Navbar({ isDark, setIsDark }) {
           className={`hidden text-sm md:text-base md:flex item-center bg-white bg-opacity-50 shadow-sm gap-6 lg:gap-8 px-10 py-2 lg:px-12 lg:py-3 rounded-full dark:bg-[rgba(255,255,255,0.4)]`}
         >
           <li className="font-ovo ">
-            <Link href={"/"}>Home</Link>
+            <Link href={"#"}>Home</Link>
           </li>
           <li className="font-ovo">
-            <Link href={"about"}>About me</Link>
+            <Link href={"#"}>About me</Link>
           </li>
           <li>
-            <Link href={"services"}>Services</Link>
+            <Link href={"#"}>Services</Link>
           </li>
           <li className="font-ovo">
-            <Link href={"works"}>My works</Link>
+            <Link href={"#"}>My works</Link>
           </li>
           <li className="font-ovo">
-            <Link href={"testimonials"}>Testimonials</Link>
+            <Link href={"#"}>Testimonials</Link>
           </li>
         </ul>
         <div className="flex item-center gap-6">
@@ -108,19 +108,19 @@ export default function Navbar({ isDark, setIsDark }) {
             </button>
           </div>
           <li onClick={() => setOpenMobileNav(false)} className="font-ovo">
-            <Link href={"/"}>Home</Link>
+            <Link href={"#"}>Home</Link>
           </li>
           <li className="font-ovo" onClick={() => setOpenMobileNav(false)}>
-            <Link href={"about"}>About me</Link>
+            <Link href={"#"}>About me</Link>
           </li>
           <li className="font-ovo" onClick={() => setOpenMobileNav(false)}>
-            <Link href={"services"}>Services</Link>
+            <Link href={"#"}>Services</Link>
           </li>
           <li className="font-ovo" onClick={() => setOpenMobileNav(false)}>
-            <Link href={"works"}>My works</Link>
+            <Link href={"#"}>My works</Link>
           </li>
           <li className="font-ovo" onClick={() => setOpenMobileNav(false)}>
-            <Link href={"testimonials"}>Testimonials</Link>
+            <Link href={"#"}>Testimonials</Link>
           </li>
         </ul>
       </nav>
